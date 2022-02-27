@@ -1,0 +1,145 @@
+body {
+  background-color: $LightCream !important;
+
+  #root {
+    font-family: "Barlow";
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    //	"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    //	"Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .title {
+      font-family: "Fraunces", serif;
+      font-size: 150px;
+      line-height: 150px;
+      text-transform: lowercase;
+
+      @media only screen and (max-width: 1279px) {
+        font-size: calc(15px + 10.5vw);
+        line-height: calc(15px + 10.5vw); //72px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: calc(14.2493639vw - 13px);
+        line-height: calc(14.2493639vw - 13px); //72px;
+      }
+    }
+
+    h1 {
+      font-family: "Fraunces", serif;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 72px;
+
+      @media only screen and (max-width: 1279px) {
+        font-size: calc(12px + 4.6875vw);
+        line-height: calc(12px + 4.6875vw);
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: calc(32px + 2.0356234vw);
+        line-height: calc(32px + 2.0356234vw);
+      }
+    }
+
+    h2 {
+      font-family: "Fraunces", serif;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 48px;
+
+      @media only screen and (max-width: 1279px) {
+        font-size: calc(20px + 1.56vw);
+        line-height: calc(20px + 1.56vw);
+      }
+    }
+
+    h3 {
+      font-family: "Fraunces", serif;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 36px;
+
+      @media only screen and (max-width: 1279px) {
+        font-size: calc(22px + 0.78125vw);
+      }
+    }
+
+    h4 {
+      font-family: "Fraunces", serif;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    li {
+      font-weight: bold;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: $Grey;
+
+        &:hover {
+          color: $DarkGreyBlue;
+        }
+      }
+    }
+
+    button {
+      width: 215px;
+      height: 55px;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 6px;
+      font-family: "Fraunces", serif;
+      background-color: $DarkCyan;
+      color: $LightCream;
+      border: 0px solid black;
+      font-weight: bold;
+
+      &.inactive {
+        background-color: $LightGrey;
+
+        &:hover {
+          background-color: $LightGrey;
+          cursor: default;
+        }
+      }
+
+      &:hover {
+        background-color: $LightCyan;
+        cursor: url(./img/pointer.png), pointer;
+      }
+    }
+
+    p {
+      font-size: 16px;
+
+      @media only screen and (max-width: 1279px) {
+        font-size: calc(13.5px + 0.2vw);
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: 15px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:any-link {
+      cursor: url(./img/pointer.png), pointer;
+    }
+
+    /* WebKit browsers */
+    a:-webkit-any-link {
+      cursor: url(./img/pointer.png), pointer;
+    }
+  }
+}

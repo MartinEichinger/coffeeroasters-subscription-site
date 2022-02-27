@@ -1,0 +1,495 @@
+.plan {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @media (max-width: 1439px) {
+    max-width: none;
+  }
+
+  .entry {
+    background-image: url("./img/image-hero-blackcup-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    margin-bottom: 170px;
+
+    @media (max-width: 1439px) {
+      margin: 0px 5% 156px;
+      height: calc(343px + 7.4405vw);
+      width: 90%;
+    }
+
+    @media (max-width: 1279px) {
+      margin: 0px 5% 144px;
+      background-image: url("./img/image-hero-blackcup-tablet.jpg");
+    }
+
+    @media (max-width: 575px) {
+      background-image: url("./img/image-hero-blackcup-mobile.jpg");
+      margin: 0px 6.4% 120px;
+      width: 87.2%;
+    }
+
+    .text {
+      padding: 140px 0px 0px 85px;
+
+      @media (max-width: 991px) {
+        padding: 125px 20px 0px 60px;
+      }
+
+      @media (max-width: 575px) {
+        padding: 100px 6.4% 32px;
+      }
+
+      h1 {
+        width: 50%;
+        color: $LightCream;
+        margin-bottom: 24px;
+
+        @media (max-width: 991px) {
+          width: 55%;
+          margin-bottom: 24px;
+        }
+
+        @media (max-width: 575px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      p {
+        width: 35%;
+        color: white;
+        margin-bottom: 56px;
+
+        @media (max-width: 991px) {
+          width: 65%;
+          margin-bottom: 40px;
+        }
+
+        @media (max-width: 575px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      button {
+        display: block;
+
+        @media (max-width: 575px) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .works {
+    margin: 170px 0px 170px;
+    background-color: $DarkBlue;
+    border-radius: 10px;
+    padding: 90px 0 0 85px;
+
+    @media (max-width: 1439px) {
+      margin-left: calc(11.90476vw - 91.4px);
+      margin-right: calc(11.90476vw - 91.4px);
+      margin-top: 156px;
+      margin-bottom: 156px;
+    }
+
+    @media (max-width: 1279px) {
+      margin-top: 144px;
+      margin-bottom: 144px;
+      padding: 90px 5% 0 5%;
+    }
+
+    @media (max-width: 767px) {
+      //margin-top: calc(320px + 98vw);
+      margin: 120px 0px;
+    }
+
+    @media (max-width: 575px) {
+      text-align: center;
+    }
+
+    .crds {
+      @media (max-width: 575px) {
+        //text-align: center;
+      }
+
+      .crd {
+        width: 380px;
+
+        @media (max-width: 1279px) {
+          width: 33% !important;
+        }
+
+        @media (max-width: 991px) {
+          width: 33% !important;
+        }
+
+        @media (max-width: 575px) {
+          width: 100% !important;
+        }
+
+        .stepper {
+          margin-bottom: 50px;
+
+          .circle {
+            width: 27px;
+            height: 27px;
+            border: 2px solid $DarkCyan;
+            border-radius: 15px;
+          }
+
+          .line {
+            margin-left: -13.5px;
+            margin-right: -13.5px;
+            height: 2px;
+            width: 100%;
+            background-color: $PaleOrange;
+          }
+        }
+
+        h1 {
+          color: $PaleOrange;
+          margin-right: 105px;
+          margin-bottom: 55px;
+          font-size: 72px !important;
+          line-height: 72px !important;
+
+          @media (max-width: 991px) {
+            margin-right: 15px;
+            width: 33%;
+          }
+
+          @media (max-width: 575px) {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 24px;
+          }
+        }
+
+        h3 {
+          color: $LightCream;
+          margin-right: 125px;
+          margin-bottom: 50px;
+          width: 225px;
+
+          @media (max-width: 991px) {
+            margin-right: 15px;
+            width: 225px;
+          }
+
+          @media (max-width: 767px) {
+            width: 100%;
+            margin-right: 0px;
+          }
+
+          @media (max-width: 575px) {
+            margin-bottom: 24px;
+          }
+        }
+
+        p {
+          color: $LightCream;
+          margin-right: 95px;
+          margin-bottom: 65px;
+
+          @media (max-width: 991px) {
+            margin-right: 15px;
+          }
+
+          @media (max-width: 575px) {
+            margin-bottom: 56px;
+          }
+        }
+
+        &:last-of-type {
+          width: 350px;
+
+          .line {
+            height: 0px;
+            display: none;
+          }
+
+          h1,
+          p {
+            margin-right: 75px;
+
+            @media (max-width: 991px) {
+              margin-right: 15px;
+            }
+          }
+
+          h3 {
+            margin-right: 105px;
+
+            @media (max-width: 991px) {
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .plan {
+    .steps {
+      width: 255px;
+      margin-right: 105px;
+
+      @media (max-width: 1440px) {
+        margin-right: calc(25.24038vw - 258.5px);
+      }
+
+      a {
+        &:first-of-type {
+          h4 {
+            padding-top: 0px;
+
+            span {
+              color: $DarkCyan;
+            }
+          }
+        }
+
+        &:last-of-type {
+          h4 {
+            padding-bottom: 0px;
+            border: none;
+          }
+        }
+
+        h4 {
+          color: $DarkGreyBlue;
+          padding: 24px 0px;
+          border-bottom: 1px solid $Grey;
+          opacity: 0.4;
+
+          span {
+            margin-right: 29px;
+          }
+
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .details {
+      width: 770px;
+
+      @media (max-width: 991px) {
+        margin: 0px calc(5% - 20px);
+        width: calc(90% + 40px);
+      }
+
+      #accordionPlan {
+        width: 100%;
+
+        .accordion-item {
+          width: 100%;
+          border: none;
+          margin-bottom: 72px;
+
+          @media (max-width: 991px) {
+            margin-bottom: 84px;
+          }
+
+          @media (max-width: 767px) {
+            margin-bottom: 94px;
+          }
+
+          button {
+            &.accordion-button {
+              width: 100%;
+              background-color: $LightCream;
+              color: $Grey;
+              //font-size: 40px;
+              //line-height: 1.2;
+              box-shadow: none;
+              margin: 0px;
+
+              &:not(.collapsed)::after {
+                background-image: url("./img/chevron-down.svg");
+              }
+
+              &::after {
+                background-image: url("./img/chevron-down.svg");
+              }
+            }
+          }
+
+          .accordion-body {
+            background-color: $LightCream;
+            padding-top: 56px;
+
+            @media (max-width: 991px) {
+              padding-top: 40px;
+            }
+
+            .crd {
+              background-color: $DarkCream;
+              border-radius: 8px;
+              height: 250px;
+              max-width: 228px;
+              padding: 32px 28px 0;
+              margin-right: 23px;
+
+              @media (max-width: 1439px) {
+                margin-right: 20px;
+              }
+
+              @media (max-width: 1279px) {
+                margin-right: 15px;
+                padding: 32px 25px 0;
+              }
+
+              @media (max-width: 991px) {
+                margin-right: 10px;
+              }
+
+              @media (max-width: 575px) {
+                padding: 25px;
+                max-width: 100%;
+                margin-right: 0px;
+                margin-bottom: 16px;
+                height: auto;
+              }
+
+              h4 {
+                margin-bottom: 24px;
+              }
+
+              &.active {
+                background-color: $DarkCyan;
+                color: $LightCream;
+
+                &:hover {
+                  background-color: $DarkCyan;
+                }
+              }
+
+              &:hover {
+                background-color: $PaleOrange;
+                cursor: url(./img/pointer.png), pointer;
+              }
+
+              &:last-of-type {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+      }
+
+      .summary {
+        margin: 0 20px 40px;
+        background-color: $DarkBlue;
+        padding: 27px 64px;
+        border-radius: 10px;
+
+        @media (max-width: 991px) {
+          padding: 27px 44px;
+        }
+
+        @media (max-width: 767px) {
+          padding: 27px 25px;
+        }
+
+        p,
+        h4 {
+          color: $LightCream;
+        }
+
+        span {
+          color: $DarkCyan;
+        }
+      }
+
+      button {
+        margin-bottom: 168px;
+        margin-right: 20px;
+
+        @media (max-width: 991px) {
+          margin-bottom: 144px;
+        }
+      }
+    }
+  }
+
+  #createPlanModal {
+    .modal-dialog {
+      max-width: 540px;
+      border-radius: 8px;
+
+      .modal-content {
+        border-radius: 8px;
+        border-radius: 8px;
+
+        .modal-header {
+          background-color: $DarkGreyBlue;
+          padding: 48px 50px;
+          border-radius: 7px 7px 0px 0px;
+
+          @media (max-width: 575px) {
+            padding: 28px 24px;
+          }
+
+          h2 {
+            width: 100%;
+            color: $LightCream;
+            font-size: 40px;
+            line-height: 1.2;
+
+            @media (max-width: 575px) {
+              font-size: 28px;
+            }
+          }
+        }
+
+        .modal-body {
+          background-color: $LightCream;
+          padding: 56px;
+          border-radius: 8px;
+
+          @media (max-width: 575px) {
+            padding: 40px 24px;
+          }
+
+          p,
+          h4 {
+            color: $Grey;
+          }
+
+          h4 {
+            line-height: 40px;
+          }
+
+          p {
+            margin-bottom: 47px;
+          }
+
+          span {
+            color: $DarkCyan;
+          }
+
+          h3 {
+            color: $DarkGreyBlue;
+            margin-right: 20px;
+          }
+
+          button {
+            @media (max-width: 575px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

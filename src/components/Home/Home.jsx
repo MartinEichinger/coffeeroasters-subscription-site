@@ -22,28 +22,28 @@ const Home = () => {
         </div>
         <div className="crds d-flex flex-column flex-md-column flex-lg-row justify-content-evenly">
           <div className="crd d-flex flex-column flex-sm-row flex-md-row flex-lg-column justify-content-between align-items-center">
-            <img src="/image-gran-espresso.png" />
+            <img src="/image-gran-espresso.png" alt="Gran Espresso" />
             <div>
               <h4>Gran Espresso</h4>
               <p>Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
             </div>
           </div>
           <div className="crd d-flex flex-column flex-sm-row flex-md-row flex-lg-column justify-content-between align-items-center">
-            <img src="/image-planalto.png" />
+            <img src="/image-planalto.png" alt="Plan Alto" />
             <div>
               <h4>Planalto</h4>
               <p>Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.</p>
             </div>
           </div>
           <div className="crd d-flex flex-column flex-sm-row flex-md-row flex-lg-column justify-content-between align-items-center">
-            <img src="/image-piccollo.png" />
+            <img src="/image-piccollo.png" alt="Piccollo" />
             <div>
               <h4>Piccollo</h4>
               <p>Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
             </div>
           </div>
           <div className="crd d-flex flex-column flex-sm-row flex-md-row flex-lg-column justify-content-between align-items-center">
-            <img src="/image-danche.png" />
+            <img src="/image-danche.png" alt="Danche" />
             <div>
               <h4>Danche</h4>
               <p>Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>

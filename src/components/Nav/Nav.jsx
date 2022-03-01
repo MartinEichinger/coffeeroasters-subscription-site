@@ -17,7 +17,7 @@ const Nav = () => {
           </a>
         </div>
         <div className="nav-icon d-block d-sm-none" onClick={() => (visible ? setVisible(0) : setVisible(1))}>
-          <img src="./img/nav/icon-hamburger.svg" alt="logo mobile menu" class={visible ? "rotate-270-cw" : "rotate-270-ccw"} />
+          <img src="./img/nav/icon-hamburger.svg" alt="logo mobile menu" className={visible ? "rotate-270-cw" : "rotate-270-ccw"} />
         </div>
         <ul className="nav d-none d-sm-flex justify-content-end flex-row">
           <li className="nav-link">

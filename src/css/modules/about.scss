@@ -23,6 +23,7 @@
     }
 
     @media (max-width: 1279px) {
+      margin: 0px 5% 144px;
       background-image: url("./img/image-hero-whitecup-tablet.jpg");
     }
 
@@ -91,6 +92,10 @@
     @media (max-width: 1439px) {
       margin: 0px 5% 260px;
       width: 90%;
+    }
+
+    @media (max-width: 991px) {
+      margin: 0px 5% 300px;
     }
 
     @media (max-width: 575px) {
@@ -246,12 +251,12 @@
     //padding: 0px 85px;
 
     @media (max-width: 1439px) {
-      margin: 0px 5% 260px;
+      margin: 0px 5% 170px;
       width: 90%;
     }
 
     @media (max-width: 991px) {
-      margin: 144px 5.5% 200px;
+      margin: 144px 5.5% 144px;
     }
 
     @media (max-width: 575px) {

@@ -302,6 +302,10 @@
 
           @media (max-width: 991px) {
             margin-bottom: 84px;
+
+            &:last-of-type {
+              margin-bottom: 128px;
+            }
           }
 
           @media (max-width: 767px) {

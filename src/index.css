@@ -71,6 +71,9 @@ body #root h3 {
   body #root h3 {
     font-size: calc(22px + 0.78125vw);
   }
+  body #root h3.small {
+    font-size: calc(12px + 1.5625vw);
+  }
 }
 body #root h4 {
   font-family: "Fraunces", serif;
@@ -481,12 +484,18 @@ nav li:last-of-type {
     margin-right: calc(33.8542vw - 220px);
   }
 }
+@media (max-width: 575px) {
+  .home .collection .crds .crd img {
+    margin-top: 52px;
+  }
+}
 .home .collection .crds .crd h4 {
   margin-top: -30px;
   margin-bottom: 24px;
 }
 @media (max-width: 575px) {
   .home .collection .crds .crd h4 {
+    margin-top: 24px;
     text-align: center;
   }
 }
@@ -770,6 +779,7 @@ nav li:last-of-type {
 }
 @media (max-width: 1279px) {
   .about .entry {
+    margin: 0px 5% 144px;
     background-image: url("./img/image-hero-whitecup-tablet.jpg");
   }
 }
@@ -842,6 +852,11 @@ nav li:last-of-type {
   .about .commitment {
     margin: 0px 5% 260px;
     width: 90%;
+  }
+}
+@media (max-width: 991px) {
+  .about .commitment {
+    margin: 0px 5% 300px;
   }
 }
 @media (max-width: 575px) {
@@ -1001,13 +1016,13 @@ nav li:last-of-type {
 }
 @media (max-width: 1439px) {
   .about .headquarters {
-    margin: 0px 5% 260px;
+    margin: 0px 5% 170px;
     width: 90%;
   }
 }
 @media (max-width: 991px) {
   .about .headquarters {
-    margin: 144px 5.5% 200px;
+    margin: 144px 5.5% 144px;
   }
 }
 @media (max-width: 575px) {
@@ -1390,6 +1405,9 @@ nav li:last-of-type {
 @media (max-width: 991px) {
   .plan .plan .details #accordionPlan .accordion-item {
     margin-bottom: 84px;
+  }
+  .plan .plan .details #accordionPlan .accordion-item:last-of-type {
+    margin-bottom: 128px;
   }
 }
 @media (max-width: 767px) {

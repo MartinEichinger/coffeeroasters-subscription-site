@@ -163,6 +163,10 @@
             margin-left: calc(12.5vw - 84px); //-12px;
             margin-right: calc(33.8542vw - 220px); //-25px;
           }
+
+          @media (max-width: 575px) {
+            margin-top: 52px;
+          }
         }
 
         h4 {
@@ -170,6 +174,7 @@
           margin-bottom: 24px;
 
           @media (max-width: 575px) {
+            margin-top: 24px;
             text-align: center;
           }
         }

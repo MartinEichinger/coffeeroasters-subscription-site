@@ -66,6 +66,10 @@ body {
 
       @media only screen and (max-width: 1279px) {
         font-size: calc(22px + 0.78125vw);
+
+        &.small {
+          font-size: calc(12px + 1.5625vw);
+        }
       }
     }
 

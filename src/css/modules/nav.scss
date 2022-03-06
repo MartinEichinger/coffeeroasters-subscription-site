@@ -7,11 +7,18 @@ nav {
   background-color: $LightCream;
 
   @media (max-width: 1439px) {
-    margin: 0px 5% 15px;
+    margin: 0px 5%;
   }
 
   @media (max-width: 575px) {
-    margin: 0px 6.4% 15px;
+    margin: 0px 6.4%;
+  }
+
+  .nav-icon {
+    .collapsed {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
   }
 
   li {
@@ -34,7 +41,9 @@ nav {
   z-index: 1;
 
   &.invisible {
-    display: none;
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
   }
 
   li {

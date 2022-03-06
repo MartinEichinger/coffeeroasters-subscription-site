@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
-  const [visible, setVisible] = useState(0);
+  const [visible, setVisible] = useState(2);
 
   return (
     <React.Fragment>
@@ -16,8 +16,12 @@ const Nav = () => {
             <img src="./img/nav/logo.svg" alt="logo coffeeroasters" />
           </a>
         </div>
-        <div className="nav-icon d-block d-sm-none" onClick={() => (visible ? setVisible(0) : setVisible(1))}>
-          <img src="./img/nav/icon-hamburger.svg" alt="logo mobile menu" className={visible ? "rotate-270-cw" : "rotate-270-ccw"} />
+        <div className="nav-icon d-block d-sm-none" onClick={() => (visible === 0 || visible === 2 ? setVisible(1) : setVisible(0))}>
+          <img
+            src="./img/nav/icon-hamburger.svg"
+            alt="logo mobile menu"
+            className={visible === 0 ? "rotate-270-ccw" : visible === 1 ? "rotate-270-cw" : "collapsed"}
+          />
         </div>
         <ul className="nav d-none d-sm-flex justify-content-end flex-row">
           <li className="nav-link">
@@ -33,9 +37,11 @@ const Nav = () => {
       </nav>
       <div
         className={
-          visible
+          visible === 0
+            ? "nav-menu d-flex d-sm-none flex-column align-items-center slide-out-top"
+            : visible === 1
             ? "nav-menu d-flex d-sm-none flex-column align-items-center slide-in-top"
-            : "nav-menu d-flex d-sm-none flex-column align-items-center slide-out-top"
+            : "nav-menu d-flex d-sm-none flex-column align-items-center invisible"
         }
       >
         <ul>

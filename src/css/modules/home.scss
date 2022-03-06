@@ -23,7 +23,7 @@
     }
 
     @media (max-width: 991px) {
-      margin-bottom: 140px;
+      margin-bottom: 144px;
     }
 
     @media (max-width: 767px) {
@@ -90,6 +90,10 @@
   .collection {
     text-align: center;
     margin: 0px 0px 170px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 144px;
+    }
 
     .box {
       width: 100%;
@@ -162,7 +166,7 @@
         }
 
         h4 {
-          margin-top: 20px;
+          margin-top: -30px;
           margin-bottom: 24px;
 
           @media (max-width: 575px) {
@@ -195,6 +199,10 @@
       margin: 0px 5.5% 270px;
     }
 
+    @media (max-width: 991px) {
+      height: 573px;
+    }
+
     @media (max-width: 575px) {
       height: calc(1462.5px - 150vw);
       margin-bottom: calc(200px + 98vw);
@@ -207,7 +215,7 @@
       text-align: center;
 
       @media (max-width: 991px) {
-        padding: 55px 0 58px;
+        padding: 55px 0 42px;
       }
 
       @media (max-width: 575px) {
@@ -218,6 +226,10 @@
       h2 {
         color: $LightCream;
         margin-bottom: 32px;
+
+        @media (max-width: 991px) {
+          margin-bottom: 24px;
+        }
       }
 
       p {
@@ -256,7 +268,7 @@
         margin: 18px 45px;
 
         @media (max-width: 991px) {
-          margin: 0px 48px 12px 0px;
+          margin: 0px 48px 16px 0px;
         }
 
         @media (max-width: 575px) {
@@ -287,7 +299,7 @@
     margin: 350px 85px 200px;
 
     @media (max-width: 991px) {
-      margin: 420px 5.5% 200px;
+      margin: 420px 5.5% 144px;
     }
 
     @media (max-width: 575px) {
@@ -299,6 +311,10 @@
     h4 {
       color: $Grey;
       margin-bottom: 80px;
+
+      @media (max-width: 991px) {
+        margin-bottom: 40px;
+      }
     }
 
     .crds {
@@ -319,6 +335,10 @@
 
         .stepper {
           margin-bottom: 67px;
+
+          @media (max-width: 991px) {
+            margin-bottom: 48px;
+          }
 
           .circle {
             width: 27px;
@@ -356,6 +376,7 @@
 
           @media (max-width: 991px) {
             margin-right: 15px;
+            margin-bottom: 38px;
           }
 
           @media (max-width: 575px) {
@@ -368,7 +389,8 @@
           margin-bottom: 65px;
 
           @media (max-width: 991px) {
-            margin-right: 15px;
+            margin-right: 12px;
+            margin-bottom: 44px;
           }
 
           @media (max-width: 575px) {

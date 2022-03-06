@@ -47,7 +47,7 @@
       h1 {
         width: 50%;
         color: $LightCream;
-        margin-bottom: 24px;
+        margin-bottom: 32px;
 
         @media (max-width: 991px) {
           width: 55%;
@@ -61,7 +61,7 @@
       }
 
       p {
-        width: 35%;
+        width: 40%;
         color: white;
         margin-bottom: 56px;
 
@@ -90,7 +90,7 @@
     margin: 170px 0px 170px;
     background-color: $DarkBlue;
     border-radius: 10px;
-    padding: 90px 0 0 85px;
+    padding: 110px 0 0 85px;
 
     @media (max-width: 1439px) {
       margin-left: calc(11.90476vw - 91.4px);
@@ -135,7 +135,7 @@
         }
 
         .stepper {
-          margin-bottom: 50px;
+          margin-bottom: 67px;
 
           .circle {
             width: 27px;
@@ -156,7 +156,7 @@
         h1 {
           color: $PaleOrange;
           margin-right: 105px;
-          margin-bottom: 55px;
+          margin-bottom: 38px;
           font-size: 72px !important;
           line-height: 72px !important;
 
@@ -175,7 +175,7 @@
         h3 {
           color: $LightCream;
           margin-right: 125px;
-          margin-bottom: 50px;
+          margin-bottom: 42px;
           width: 225px;
 
           @media (max-width: 991px) {
@@ -296,6 +296,10 @@
           border: none;
           margin-bottom: 72px;
 
+          &.disable {
+            opacity: 0.5;
+          }
+
           @media (max-width: 991px) {
             margin-bottom: 84px;
           }
@@ -363,6 +367,7 @@
 
               h4 {
                 margin-bottom: 24px;
+                margin-right: -5px;
               }
 
               &.active {

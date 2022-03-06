@@ -33,7 +33,7 @@ body #root .title {
 }
 body #root h1 {
   font-family: "Fraunces", serif;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 72px;
   line-height: 72px;
 }
@@ -51,7 +51,7 @@ body #root h1 {
 }
 body #root h2 {
   font-family: "Fraunces", serif;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 40px;
   line-height: 48px;
 }
@@ -63,7 +63,7 @@ body #root h2 {
 }
 body #root h3 {
   font-family: "Fraunces", serif;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 32px;
   line-height: 36px;
 }
@@ -74,7 +74,7 @@ body #root h3 {
 }
 body #root h4 {
   font-family: "Fraunces", serif;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 24px;
   line-height: 32px;
 }
@@ -144,8 +144,8 @@ body #root a:-webkit-any-link {
 /* Modules */
 nav {
   max-width: 1280px;
-  margin: 0 auto 15px;
-  height: 100px;
+  margin: 0 auto;
+  height: 115px;
   position: relative;
   z-index: 5;
   background-color: #fefcf7;
@@ -433,14 +433,15 @@ nav li:last-of-type {
   left: 0;
   text-align: center;
   color: #83888f;
-  font-weight: bold;
+  font-weight: 900;
+  opacity: 0.5;
 }
 .home .collection .crds {
   margin: -70px 85px 0px;
 }
 .home .collection .crds .crd {
   position: relative;
-  margin: 30px 0px;
+  margin: 30px 15px;
   width: 255px;
   height: 385px;
 }
@@ -512,7 +513,7 @@ nav li:last-of-type {
 .home .choose .text {
   width: 540px;
   margin: 0px auto;
-  padding: 100px 0 80px;
+  padding: 100px 0 70px;
   text-align: center;
 }
 @media (max-width: 991px) {
@@ -536,7 +537,7 @@ nav li:last-of-type {
 }
 .home .choose .crd {
   width: 350px;
-  height: 375px;
+  height: 385px;
   background-color: #0e8784;
   text-align: center;
   border-radius: 8px;
@@ -562,7 +563,7 @@ nav li:last-of-type {
 }
 .home .choose .crd h4 {
   color: #fefcf7;
-  margin: 12px 45px;
+  margin: 18px 45px;
 }
 @media (max-width: 991px) {
   .home .choose .crd h4 {
@@ -578,7 +579,7 @@ nav li:last-of-type {
 }
 .home .choose .crd p {
   color: #fefcf7;
-  margin: 12px 45px 45px;
+  margin: 12px 45px 48px;
 }
 @media (max-width: 991px) {
   .home .choose .crd p {
@@ -609,7 +610,7 @@ nav li:last-of-type {
 }
 .home .works h4 {
   color: #83888f;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .home .works .crds .crd {
   width: 380px;
@@ -625,7 +626,7 @@ nav li:last-of-type {
   }
 }
 .home .works .crds .crd .stepper {
-  margin-bottom: 50px;
+  margin-bottom: 67px;
 }
 .home .works .crds .crd .stepper .circle {
   width: 27px;
@@ -641,7 +642,7 @@ nav li:last-of-type {
 .home .works .crds .crd h1 {
   color: #fdd6ba;
   margin-right: 105px;
-  margin-bottom: 55px;
+  margin-bottom: 38px;
   font-size: 72px !important;
   line-height: 72px !important;
 }
@@ -822,6 +823,7 @@ nav li:last-of-type {
   width: 40%;
   overflow: hidden;
   border-radius: 8px;
+  height: 520px;
   background-image: url("./img/image-commitment-desktop.jpg");
   background-size: cover;
 }
@@ -933,7 +935,7 @@ nav li:last-of-type {
   padding: 0 6px;
 }
 .about .quality img {
-  margin: -90px 125px 0px;
+  margin: -90px 85px 0px 125px;
   border-radius: 8px;
 }
 @media (max-width: 1439px) {
@@ -1116,7 +1118,7 @@ nav li:last-of-type {
 .plan .entry .text h1 {
   width: 50%;
   color: #fefcf7;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 @media (max-width: 991px) {
   .plan .entry .text h1 {
@@ -1131,7 +1133,7 @@ nav li:last-of-type {
   }
 }
 .plan .entry .text p {
-  width: 35%;
+  width: 40%;
   color: white;
   margin-bottom: 56px;
 }
@@ -1159,7 +1161,7 @@ nav li:last-of-type {
   margin: 170px 0px 170px;
   background-color: #2c343e;
   border-radius: 10px;
-  padding: 90px 0 0 85px;
+  padding: 110px 0 0 85px;
 }
 @media (max-width: 1439px) {
   .plan .works {
@@ -1205,7 +1207,7 @@ nav li:last-of-type {
   }
 }
 .plan .works .crds .crd .stepper {
-  margin-bottom: 50px;
+  margin-bottom: 67px;
 }
 .plan .works .crds .crd .stepper .circle {
   width: 27px;
@@ -1223,7 +1225,7 @@ nav li:last-of-type {
 .plan .works .crds .crd h1 {
   color: #fdd6ba;
   margin-right: 105px;
-  margin-bottom: 55px;
+  margin-bottom: 38px;
   font-size: 72px !important;
   line-height: 72px !important;
 }
@@ -1243,7 +1245,7 @@ nav li:last-of-type {
 .plan .works .crds .crd h3 {
   color: #fefcf7;
   margin-right: 125px;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
   width: 225px;
 }
 @media (max-width: 991px) {
@@ -1351,6 +1353,9 @@ nav li:last-of-type {
   border: none;
   margin-bottom: 72px;
 }
+.plan .plan .details #accordionPlan .accordion-item.disable {
+  opacity: 0.5;
+}
 @media (max-width: 991px) {
   .plan .plan .details #accordionPlan .accordion-item {
     margin-bottom: 84px;
@@ -1418,6 +1423,7 @@ nav li:last-of-type {
 }
 .plan .plan .details #accordionPlan .accordion-item .accordion-body .crd h4 {
   margin-bottom: 24px;
+  margin-right: -5px;
 }
 .plan .plan .details #accordionPlan .accordion-item .accordion-body .crd.active {
   background-color: #0e8784;

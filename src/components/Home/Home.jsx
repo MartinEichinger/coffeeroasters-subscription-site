@@ -39,14 +39,14 @@ const Home = () => {
             <img src="/image-piccollo.png" alt="Piccollo" />
             <div>
               <h4>Piccollo</h4>
-              <p>Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+              <p>Mild and smooth blend featuring notes of toasted almond and dried cherry.</p>
             </div>
           </div>
           <div className="crd d-flex flex-column flex-sm-row flex-md-row flex-lg-column justify-content-between align-items-center">
             <img src="/image-danche.png" alt="Danche" />
             <div>
               <h4>Danche</h4>
-              <p>Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+              <p>Ethiopian hand-harvested blend densely packed with vibrant fruit notes.</p>
             </div>
           </div>
         </div>

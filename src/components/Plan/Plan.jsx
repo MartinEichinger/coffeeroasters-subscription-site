@@ -9,7 +9,10 @@ const Plan = () => {
     set5: 0,
   });
 
-  var enable = selection.set1 !== 0 && selection.set2 !== 0 && selection.set3 !== 0 && selection.set4 !== 0 && selection.set5 !== 0;
+  var enable =
+    selection.set1 !== "Capsule"
+      ? selection.set1 !== 0 && selection.set2 !== 0 && selection.set3 !== 0 && selection.set4 !== 0 && selection.set5 !== 0
+      : selection.set1 !== 0 && selection.set2 !== 0 && selection.set3 !== 0 && selection.set5 !== 0;
 
   //enable = true;
 
@@ -247,12 +250,12 @@ const Plan = () => {
                   </div>
                 </div>
               </div>
-              <div className="accordion-item">
+              <div className={selection.set1 === "Capsule" ? "accordion-item disable" : "accordion-item"}>
                 <div className="accordion-header" id="panelsStayOpen-headingFour">
                   <button
                     className="accordion-button collapsed"
                     type="button"
-                    data-bs-toggle="collapse"
+                    data-bs-toggle={selection.set1 === "Capsule" ? "dispose" : "collapse"}
                     data-bs-target="#panelsStayOpen-collapseFour"
                     aria-expanded="false"
                     aria-controls="panelsStayOpen-collapseFour"
@@ -321,7 +324,7 @@ const Plan = () => {
                         }}
                       >
                         <h4>Every week</h4>
-                        <p>$14.00 per shipment. Includes free first-class shipping.</p>
+                        <p>$7.20 per shipment. Includes free first-class shipping.</p>
                       </div>
                       <div
                         className={selection.set5 === "Every 2 Weeks" ? "crd active" : "crd"}
@@ -331,7 +334,7 @@ const Plan = () => {
                         }}
                       >
                         <h4>Every 2 weeks</h4>
-                        <p>$17.25 per shipment. Includes free priority shipping.</p>
+                        <p>$9.60 per shipment. Includes free priority shipping.</p>
                       </div>
                       <div
                         className={selection.set5 === "Every Month" ? "crd active" : "crd"}
@@ -341,7 +344,7 @@ const Plan = () => {
                         }}
                       >
                         <h4>Every month</h4>
-                        <p>$22.50 per shipment. Includes free priority shipping.</p>
+                        <p>$12.00 per shipment. Includes free priority shipping.</p>
                       </div>
                     </div>
                   </div>
@@ -351,13 +354,22 @@ const Plan = () => {
 
             <div className="summary">
               <p>ORDER SUMMARY</p>
-              <h4>
-                “I drink my coffee using <span>{selection.set1 !== 0 ? selection.set1 : "_____"}</span>, with a{" "}
-                <span>{selection.set2 !== 0 ? selection.set2 : "_____"}</span> type of bean.{" "}
-                <span>{selection.set3 !== 0 ? selection.set3 : "_____"}</span> ground ala{" "}
-                <span>{selection.set4 !== 0 ? selection.set4 : "_____"}</span>, sent to me{" "}
-                <span>{selection.set5 !== 0 ? selection.set5 : "_____"}</span>.”
-              </h4>
+              {selection.set1 === "Capsule" ? (
+                <h4>
+                  “I drink my coffee using <span>{selection.set1 !== 0 ? selection.set1 : "_____"}</span>, with a{" "}
+                  <span>{selection.set2 !== 0 ? selection.set2 : "_____"}</span> type of bean.{" "}
+                  <span>{selection.set3 !== 0 ? selection.set3 : "_____"}</span> , sent to me{" "}
+                  <span>{selection.set5 !== 0 ? selection.set5 : "_____"}</span>.”
+                </h4>
+              ) : (
+                <h4>
+                  “I drink my coffee as <span>{selection.set1 !== 0 ? selection.set1 : "_____"}</span>, with a{" "}
+                  <span>{selection.set2 !== 0 ? selection.set2 : "_____"}</span> type of bean.{" "}
+                  <span>{selection.set3 !== 0 ? selection.set3 : "_____"}</span> ground ala{" "}
+                  <span>{selection.set4 !== 0 ? selection.set4 : "_____"}</span>, sent to me{" "}
+                  <span>{selection.set5 !== 0 ? selection.set5 : "_____"}</span>.”
+                </h4>
+              )}
             </div>
 
             <button
@@ -380,19 +392,28 @@ const Plan = () => {
               </h2>
             </div>
             <div className="modal-body form d-flex flex-column">
-              <h4>
-                “I drink my coffee using <span>{selection.set1 !== 0 ? selection.set1 : "_____"}</span>, with a{" "}
-                <span>{selection.set2 !== 0 ? selection.set2 : "_____"}</span> type of bean.{" "}
-                <span>{selection.set3 !== 0 ? selection.set3 : "_____"}</span> ground ala{" "}
-                <span>{selection.set4 !== 0 ? selection.set4 : "_____"}</span>, sent to me{" "}
-                <span>{selection.set5 !== 0 ? selection.set5 : "_____"}</span>.”
-              </h4>
+              {selection.set1 === "Capsule" ? (
+                <h4>
+                  “I drink my coffee using <span>{selection.set1 !== 0 ? selection.set1 : "_____"}</span>, with a{" "}
+                  <span>{selection.set2 !== 0 ? selection.set2 : "_____"}</span> type of bean.{" "}
+                  <span>{selection.set3 !== 0 ? selection.set3 : "_____"}</span> , sent to me{" "}
+                  <span>{selection.set5 !== 0 ? selection.set5 : "_____"}</span>.”
+                </h4>
+              ) : (
+                <h4>
+                  “I drink my coffee as <span>{selection.set1 !== 0 ? selection.set1 : "_____"}</span>, with a{" "}
+                  <span>{selection.set2 !== 0 ? selection.set2 : "_____"}</span> type of bean.{" "}
+                  <span>{selection.set3 !== 0 ? selection.set3 : "_____"}</span> ground ala{" "}
+                  <span>{selection.set4 !== 0 ? selection.set4 : "_____"}</span>, sent to me{" "}
+                  <span>{selection.set5 !== 0 ? selection.set5 : "_____"}</span>.”
+                </h4>
+              )}
               <p>
                 Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be
                 redeemed at the checkout.{" "}
               </p>
               <div className="d-none d-sm-flex flex-row align-items-center">
-                <h3>$14.00 / mo</h3>
+                {selection.set5 === "Every Week" ? <h3>$7.20/ mo</h3> : selection.set5 === "Every 2 Weeks" ? <h3>$9.60/ mo</h3> : <h3>$12.00/ mo</h3>}
                 <button>Checkout</button>
               </div>
               <div className="d-flex d-sm-none flex-row align-items-center">
